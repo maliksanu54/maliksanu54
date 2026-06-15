@@ -1,725 +1,152 @@
+/* =======================================================
+   MALIKSANU54 OFFICIAL STYLE SHEET (100% CORRECTED)
+   ======================================================= */
+
 html {
     scroll-behavior: smooth;
 }
 
 /* Poori Website ki Setting */
 body {
-    background-color: #0f0f0f; /* Thoda soft black */
+    background-color: #0f0f0f;
     color: #ffffff;
-    font-family: 'Segoe UI', Arial, sans-serif; /* Modern font style */
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 /* Navbar Styling */
-/* Navbar Styling (Fixed on top matching image_0d7979.png) */
 .navbar {
-    background-color: #ffffff; /* Purane #1a1a1a se badal kar pure white kiya */
+    background-color: #ffffff;
     padding: 10px 40px; 
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    
-    /* Yeh lines navbar ko freeze rakhengi */
     position: fixed; 
     top: 0;          
     left: 0;
     width: 100%;     
     z-index: 9999;   
     box-sizing: border-box; 
-    
-    /* --- Yeh lines navbar ko freeze rakhengi --- */
-    position: fixed; /* Isse navbar screen par ek hi jagah ruk jayegi */
-    top: 0;          /* Bilkul top par chipki rahegi */
-    left: 0;
-    width: 100%;     /* Poori screen ki width cover karegi */
-    z-index: 9999;   /* Isse navbar hamesha har section ke UPAR show hogi, hide nahi hogi */
-    box-sizing: border-box; /* Width ko padding ke sath adjust rakhne ke liye */
 }
 
-/* Logo ka Size bada karne ke liye naya code */
-.logo-img {
-    height: 75px; /* Isse aapka logo bada aur saaf dikhega */
-    width: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-/* Mouse le jaane par thoda sa zoom effect */
-.logo-img:hover {
-    transform: scale(1.05);
-}
-
-/* Links ka color professional blue kiya aur font bold kiya */
-.nav-links a {
-    color: #007bff !important; /* Black se badal kar professional blue kar diya */
-    text-decoration: none;
-    font-weight: 700;          /* Normal font se badal kar full BOLD kar diya */
-    font-size: 17px;           /* Size thoda bada kiya taake achha lage */
-    margin-left: 30px;         /* Buttons ke beech ka gap thoda badhaya */
-    letter-spacing: 1px;       /* Alphabet ke beech thodi premium space */
-    text-transform: uppercase; /* Taake hamesha CAPITAL letters mein hi rahe */
-    transition: all 0.3s ease; /* Hover effect ko smooth karne ke liye */
-}
-
-/* Jab user mouse le jaye toh halka sa color change ho aur shine kare */
-.nav-links a:hover {
-    color: #0056b3 !important; /* Hover karne par thoda dark elegant blue */
-    transform: scale(1.05);    /* Halka sa bada hoga jo dekhne mein premium lagta hai */
-    display: inline-block;
-}
-
-/* =======================================================
-   HERO SECTION STYLING (Matching image_0e5a77.png) 
-   ======================================================= */
-.hero-section {
-    /* Extension ko .png se badal kar .jpg kar diya hai */
-    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
-                url('Gemini_Generated_Image_ejohlzejohlzejoh.jpg.png') no-repeat center center/cover;
-    
-    height: 75vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 90px 20px 0 20px; 
-}
-
-.hero-content {
-    max-width: 900px; /* Text ka layout wide aur professional rakhne ke liye */
-}
-
-.hero-section h1 {
-    color: #ffffff; /* Image ke mutabiq heading white */
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-}
-
-.hero-section p {
-    font-size: 20px;
-    color: #cbd5e1; /* Soft off-white color from image */
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
-
-/* Yellow Consultation Button Style */
-.consultation-btn {
-    background-color: #dcb342; /* Yellowish-gold color from image */
-    color: #1e222b; /* Dark text inside button */
-    border: none;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px; /* Pill shape */
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(220, 179, 66, 0.3); /* Premium glow effect */
-    transition: all 0.3s ease;
-}
-
-.consultation-btn:hover {
-    background-color: #c9a035; /* Hover par thoda dark gold */
-    transform: translateY(-3px); /* Button upar uthega */
-    box-shadow: 0 6px 20px rgba(220, 179, 66, 0.5); /* Stronger glow */
-}
-
-/* Purana main-btn (Backup ke liye agar aapko kahin aur use karna ho) */
-.main-btn {
-    background-color: orange;
-    color: #000000;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
-}
-
-.main-btn:hover {
-    background-color: #e59500;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.5);
-}
-
-/* =======================================================
-   SERVICES SECTION STYLING (Blue Theme)
-   ======================================================= */
-.services-section {
-    padding: 80px 20px;
-    background-color: #0b1a30; /* Dark Navy Blue Background */
-    border-top: 1px solid #1a2f4c;
-    text-align: center;
-}
-
-.services-section h2 {
-    color: orange;
-    font-size: 36px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.section-subtitle {
-    color: #bcccdc; /* Light blue-grey text */
-    font-size: 16px;
-    margin-bottom: 50px;
-}
-
-/* Container for Cards */
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Individual Card Design */
-.service-card {
-    background-color: #132238; 
-    border: 1px solid #1e3350;
-    border-radius: 15px;
-    padding: 35px 25px;
-    width: 280px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
-}
-
-/* Hover Effect on Cards */
-.service-card:hover {
-    transform: translateY(-10px);
-    border-color: orange;
-    box-shadow: 0 10px 25px rgba(255, 165, 0, 0.2);
-}
-
-/* Icon Styling */
-.service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: #a5b7ca;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* =======================================================
-   QUICK PAGES & CONTACT STYLING
-   ======================================================= */
-.quick-pages, .contact-section {
-    padding: 60px 20px;
-    border-top: 1px solid #222;
-}
-
-.quick-pages h2, .contact-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Quick Links Styling */
-.quick-links a {
-    color: orange;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.quick-links a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-/* Contact Info */
-.contact-info p {
-    font-size: 18px;
-    margin: 12px 0;
-    color: #dddddd;
-}
-
-/* Footer Styling */
-/* =======================================================
-   FOOTER STYLING (Matching image_0d883d.png)
-   ======================================================= */
-.footer {
-    background-color: #0b132b; /* Exact deep dark navy blue background from image */
-    padding: 35px 20px;
-    position: relative;
-    clear: both; /* Isse footer upar wale sections ke sath mix nahi hota */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Gold border line at the very top of the footer */
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px; /* Thin line */
-    background-color: #dcb342; /* Gold/Yellow color from image */
-}
-
-/* Footer text adjustment */
-.footer p {
-    color: #ffffff; /* Text color pure white */
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0;
-    letter-spacing: 0.5px;
-    opacity: 0.9; /* Soft look */
-}
-
-/* Mobile responsive font sizing */
-@media (max-width: 768px) {
-    .footer {
-        padding: 25px 15px;
-    }
-    .footer p {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-}
-}
-
-/* Mobile Responsive Setup */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-    .nav-links {
-        margin-top: 15px;
-    }
-    .nav-links a {
-        margin: 0 10px;
-    }
-    .hero-section h1 {
-        font-size: 32px;
-    }
-    .hero-section p {
-        font-size: 16px;
-    }
-}
-/* =======================================================
-   WHY CHOOSE US SECTION (Matching image_0df121.png)
-   ======================================================= */
-.why-choose-section {
-    background-color: #ffffff; /* Pure white background as requested */
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.why-choose-section h2 {
-    color: #0d1b2a; /* Dark text for contrast on white background */
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.why-choose-section h2 span {
-    color: #0d1b2a; /* Main heading text color */
-}
-
-/* Gold underline effect under heading */
-.why-choose-section .underline {
-    width: 70px;
-    height: 4px;
-    background-color: #dcb342; /* Gold/Yellow line */
-    margin: 15px auto 50px auto;
-    border-radius: 2px;
-}
-
-/* Container setup */
-.choose-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Individual Card Styling */
-.choose-card {
-    background-color: #f4f6f9; /* Light greyish-blue card background from image */
-    padding: 40px 30px;
-    border-radius: 12px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02); /* Very subtle soft shadow */
-    transition: transform 0.3s ease;
-}
-
-.choose-card:hover {
-    transform: translateY(-5px); /* Hover par halka sa upar uthega */
-}
-
-/* Big Gold Numbers/Text */
-.choose-stat {
-    color: #dcb342; /* Exact gold color */
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    letter-spacing: -1px;
-}
-
-/* Card Heading */
-.choose-card h3 {
-    color: #0a1118; /* Bold dark text */
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-/* Card Description Paragraph */
-.choose-card p {
-    color: #5c677d; /* Soft muted grey text for reading comfort */
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-/* Responsive adjustment for Mobile */
-@media (max-width: 768px) {
-    .why-choose-section h2 {
-        font-size: 28px;
-    }
-    .choose-card {
-        width: 100%; /* Mobile par card full width ho jayein ge */
-        max-width: 340px;
-    }
-}
-/* =======================================================
-   CONTACT SECTION (Matching image_0de91d.png)
-   ======================================================= */
-.contact-section {
-    background-color: #ffffff; /* Pure white background */
-    padding: 80px 8%;
-    text-align: center;
-    border-top: 1px solid #eeeeee;
-}
-
-.contact-section h2 {
-    color: #0d1b2a; /* Dark navy color */
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-/* Gold underline under heading */
-.contact-section .underline {
-    width: 60px;
-    height: 4px;
-    background-color: #dcb342;
-    margin: 15px auto 60px auto;
-    border-radius: 2px;
-}
-
-/* Main Split Flex Container */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left; /* Text flow left aligned inside columns */
-}
-
-/* --- Left Column Styling --- */
-.contact-info-left {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.info-item p {
-    font-size: 17px;
-    color: #0d1b2a;
-    margin-bottom: 18px;
-}
-
-.info-item strong {
-    font-weight: 700;
-}
-
-.cta-text {
-    font-size: 16px;
-    color: #334155; /* Soft dark grey text */
-    line-height: 1.6;
-    margin: 25px 0 35px 0;
-    max-width: 450px;
-}
-
-/* Start WhatsApp Chat Button */
-.whatsapp-chat-btn {
-    display: inline-block;
-    background-color: #dcb342;
-    color: #1e222b;
-    text-decoration: none;
-    padding: 15px 35px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    width: fit-content;
-    box-shadow: 0 4px 15px rgba(220, 179, 66, 0.3);
-    transition: all 0.3s ease;
-}
-
-.whatsapp-chat-btn:hover {
-    background-color: #c9a035;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(220, 179, 66, 0.5);
-}
-
-/* --- Right Column Form Box Styling --- */
-.contact-form-right {
-    flex: 1;
-    min-width: 320px;
-    background-color: #f4f6f9; /* Exact soft light-grey box color from image */
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
-}
-
-.contact-form-right form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Form Inputs & Textarea fields */
-.contact-form-right input, 
-.contact-form-right textarea {
-    width: 100%;
-    padding: 16px 20px;
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    font-size: 15px;
-    color: #333333;
-    outline: none;
-    box-sizing: border-box;
-    font-family: inherit;
-    transition: border-color 0.3s ease;
-}
-
-.contact-form-right input:focus, 
-.contact-form-right textarea:focus {
-    border-color: #dcb342; /* Focus hone par gold border */
-}
-
-/* Resize option disabled for styling clean look */
-.contact-form-right textarea {
-    resize: none;
-}
-
-/* Send Message Button inside Form */
-.send-message-btn {
-    background-color: #dcb342;
-    color: #1e222b;
-    border: none;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(220, 179, 66, 0.2);
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.send-message-btn:hover {
-    background-color: #c9a035;
-    box-shadow: 0 6px 20px rgba(220, 179, 66, 0.4);
-}
-
-/* --- Responsive Adjustments for Mobile --- */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column; /* Mobile par upar-neeche ho jayenge */
-        gap: 40px;
-    }
-    .contact-info-left {
-        text-align: center;
-        align-items: center;
-    }
-    .contact-form-right {
-        padding: 25px 20px;
-    }
-}
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif; /* Aap apni pasand ka font laga sakte hain */
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* --- Top Bar Styles --- */
+/* --- Top Bar Setup --- */
 .top-bar {
-  background-color: #111e47; /* Dark Blue Color */
-  color: #ffffff;
+  background-color: #111e47; 
   padding: 10px 0;
+  color: #ffffff;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .top-bar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-info {
   display: flex;
-  align-items: center;
   gap: 15px;
-  letter-spacing: 1px;
 }
 
 .contact-info .separator {
-  color: #555; /* Light separator line */
+  color: #4a5568; 
 }
 
 .btn-quote {
-  background-color: #b72025; /* Red Button */
-  color: white;
+  background-color: #e2b13c; 
+  color: #111e47;
+  padding: 6px 15px;
   text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 4px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: 0.3s;
 }
 
 .btn-quote:hover {
-  background-color: #96191d; /* Hover dark red */
-}
-
-/* --- Main Navigation Styles --- */
-.main-nav {
   background-color: #ffffff;
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Halka sa shadow */
 }
 
-.nav-content {
+/* --- Main Navbar Section --- */
+.main-nav {
+  background-color: #ffffff; 
+  padding: 5px 0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  z-index: 999;
+}
+
+.main-nav .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.logo img {
-  height: 60px; /* Logo ka size controls karne ke liye */
+.main-nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.main-nav .logo .logo-img {
+  height: 140px; 
+  margin-bottom: -35px;
+  margin-top: -15px;
   display: block;
 }
 
-.nav-links {
+.logo-text {
+  color: #111e47; 
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-nav .nav-links {
   display: flex;
   list-style: none;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.main-nav .nav-links a {
+  color: #111e47; 
   text-decoration: none;
-  color: #0056b3; /* Blue text color jaisa image_acc7ad.png me hai */
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  transition: color 0.2s;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
-/* Agar aap chahte hain active page ka color change ho (jise image_acc806 me red hai) */
-.nav-links a.active, .nav-links a:hover {
-  color: #b72025; 
-}
-/* Logo ko bada karne aur left side par lane ke liye */
-.main-nav .logo .logo-img {
-  height: 120px !important;  /* Logo ka size bada karne ke liye */
-  width: auto !important;    /* Image kharab na ho */
-  max-height: none !important;
-  display: block !important;
+.main-nav .nav-links a:hover,
+.main-nav .nav-links a.active {
+  color: #e2b13c; 
 }
 
-/* Pura navbar layout sahi karne ke liye */
-.main-nav .nav-content {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 90% !important;
-  max-width: 1200px !important;
-  margin: 0 auto !important;
+.menu-toggle {
+    display: none;
 }
 
-/* Links ko right side par daxil karne ke liye */
-.main-nav .nav-links {
-  display: flex !important;
-  list-style: none !important;
-  gap: 30px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-/* Logo container ko alignment dena */
-.main-nav .logo {
-  display: flex !important;
-  align-items: center !important;
-  gap: 15px; /* Logo aur naam ke beech ka faasla */
-  overflow: hidden;
-}
 
-/* Image ka neeche wala text chop/crop karne ke liye wrapper */
-.main-nav .logo .logo-img {
-  height: 140px !important; /* Thoda bada rakha hai taaki crop sahi ho */
-  margin-bottom: -35px !important; /* Neeche ka text chupaney ke liye */
-  margin-top: -10px !important;
-  width: auto !important;
-  display: block !important;
-}
-
-/* Right side par aane wale naye naam ki styling */
-.logo-text {
-  font-size: 24px !important;
-  font-weight: 800 !important;
-  color: #111e47; /* Dark blue color jo top bar ka hai */
-  letter-spacing: 1px;
-  font-family: 'Arial Black', sans-serif;
-  text-transform: uppercase;
-}
 /* =======================================================
-   MOBILE RESPONSIVE UPDATES (LOGO & LAYOUT FIXED)
+   💥 MOBILE RESPONSIVE MEDIA QUERY (100% WORKING FIXED)
    ======================================================= */
 
 @media (max-width: 768px) {
-    /* Navbar fixed position mobile par scroll issues karti hai, isliye relative kiya */
     .main-nav {
         padding: 10px 0 !important;
         position: relative !important; 
     }
 
-    /* Content flow setting */
     .main-nav .nav-content {
         display: flex !important;
         flex-direction: row !important;
@@ -730,33 +157,30 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* 🚨 LOGO MOBILE FIX: Logo container ko shrink hone se rokna aur sahi display dena */
+    /* Logo structure reset for mobile view */
     .main-nav .logo {
         display: flex !important;
         align-items: center !important;
         gap: 8px !important;
-        max-width: 70% !important; /* Taake toggle button ke liye space bache */
-        overflow: visible !important; /* Jo hidden tha usko khatam kiya */
+        max-width: 70% !important;
+        overflow: visible !important;
     }
 
-    /* Logo Image adjustments for mobile screen */
     .main-nav .logo .logo-img {
-        height: 60px !important; /* Desktop par 140px tha, mobile ke liye safe size kiya */
+        height: 60px !important; 
         width: auto !important;
-        margin-bottom: 0 !important; /* Purane negative margins zero kiye taake image crop na ho */
+        margin-bottom: 0 !important; 
         margin-top: 0 !important;
         display: block !important;
-        max-height: none !important;
     }
 
-    /* Logo Text styling for mobile */
     .logo-text {
-        font-size: 14px !important; /* Size chota kiya taake screen se bahar na jaye */
+        font-size: 14px !important; 
         font-weight: 800 !important;
-        white-space: nowrap !important; /* Text ko double line mein jaane se rokna */
+        white-space: nowrap !important; 
     }
 
-    /* Top bar info context setup */
+    /* Top Bar Settings for Mobile */
     .top-bar-content {
         flex-direction: column !important;
         gap: 8px !important;
@@ -772,7 +196,7 @@ body {
         display: none !important;
     }
 
-    /* Navigation Links Menu setup for Mobile toggle click */
+    /* links auto hide setting (Correct spelling important) */
     .nav-links {
         display: none !important; 
         flex-direction: column !important;
@@ -786,8 +210,10 @@ body {
         gap: 15px !important;
         z-index: 9999 !important;
         margin: 0 !important;
+        list-style: none !important;
     }
 
+    /* Active class dynamic view toggle window */
     .nav-links.active {
         display: flex !important;
     }
@@ -804,84 +230,22 @@ body {
         width: 100% !important;
     }
 
-    /* Hamburger Menu Button Position setup */
+    /* hamburger bar structure mobile view */
     .menu-toggle {
         display: block !important;
         cursor: pointer !important;
         padding: 5px !important;
         z-index: 10000 !important;
+        margin-right: 15px !important;
     }
 
-.menu-toggle .bar {
+    .menu-toggle .bar {
         width: 25px !important;
         height: 3px !important;
-        background-color: #111e47 !important; /* Dark blue color lines ka */
+        background-color: #111e47 !important; 
         margin: 5px 0 !important;
         display: block !important;
         transition: 0.3s;
         border-radius: 2px;
     }
-
-    /* Sections responsiveness fixes */
-    .hero-section {
-        height: auto !important;
-        padding: 60px 20px 60px 20px !important;
-    }
-
-    .hero-section h1 {
-        font-size: 26px !important;
-    }
-
-    .hero-section p {
-        font-size: 15px !important;
-        margin-bottom: 25px !important;
-    }
-
-    .services-container {
-        gap: 15px !important;
-    }
-
-    .service-card {
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .choose-card {
-        width: 100% !important;
-    }
-
-    .contact-container {
-        flex-direction: column !important;
-        gap: 30px !important;
-    }
-
-    .contact-form-right {
-        width: 100% !important;
-        padding: 25px 20px !important;
-    }
 }
-
-/* Base setting toggle button desktop par hidden rahe */
-.menu-toggle {
-    display: none;
-}
-/* Shuru mein mobile links ko chupane ke liye */
-    .nav-links {
-        display: none !important; 
-        flex-direction: column !important;
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
-        width: 100% !important;
-        background-color: #ffffff !important;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
-        padding: 20px 0 !important;
-        gap: 15px !important;
-        z-index: 9999 !important;
-        margin: 0 !important;
-    }
-
-    /* Jab active class add ho toh menu show ho */
-    .nav-links.active {
-        display: flex !important;
-    }
