@@ -865,3 +865,23 @@ body {
 .menu-toggle {
     display: none;
 }
+/* Shuru mein mobile links ko chupane ke liye */
+    .nav-links {
+        display: none !important; 
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+        padding: 20px 0 !important;
+        gap: 15px !important;
+        z-index: 9999 !important;
+        margin: 0 !important;
+    }
+
+    /* Jab active class add ho toh menu show ho */
+    .nav-links.active {
+        display: flex !important;
+    }
