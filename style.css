@@ -1,5 +1,5 @@
 /* =======================================================
-   MALIKSANU54 OFFICIAL STYLE SHEET (COMPLETE & FIXED)
+   MALIKSANU54 OFFICIAL STYLE SHEET (100% COMPLETE & FIXED)
    ======================================================= */
 
 html {
@@ -116,6 +116,7 @@ body {
   color: #e2b13c; 
 }
 
+/* Base toggle button desktop pr hide rahega */
 .menu-toggle {
     display: none;
 }
@@ -158,7 +159,7 @@ body {
     background-color: #ffffff;
 }
 
-/* --- Services Section --- */
+/* --- Sections Basic Layout --- */
 .services-section, .why-choose-us, .contact-section {
     padding: 60px 20px;
     max-width: 1200px;
@@ -177,6 +178,7 @@ body {
     margin: 0 auto 40px auto;
 }
 
+/* --- Services Container --- */
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -239,7 +241,7 @@ body {
 /* --- Contact Section --- */
 .contact-container {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     text-align: left;
 }
 
@@ -295,6 +297,7 @@ body {
     border-radius: 4px;
     font-size: 15px;
     background-color: #f8fafc;
+    color: #000000;
 }
 
 .send-message-btn {
@@ -327,7 +330,7 @@ body {
 }
 
 /* =======================================================
-   💥 MOBILE RESPONSIVE MEDIA QUERY (100% FIXED)
+   💥 MOBILE RESPONSIVE MEDIA QUERY (100% PERFECT FIT)
    ======================================================= */
 
 @media (max-width: 768px) {
@@ -346,6 +349,7 @@ body {
         box-sizing: border-box !important;
     }
 
+    /* Logo structure mobile adjustment */
     .main-nav .logo {
         display: flex !important;
         align-items: center !important;
@@ -368,6 +372,7 @@ body {
         white-space: nowrap !important; 
     }
 
+    /* Top Bar Settings for Mobile */
     .top-bar-content {
         flex-direction: column !important;
         gap: 8px !important;
@@ -383,8 +388,8 @@ body {
         display: none !important;
     }
 
-    /* links auto hide setting */
-    .nav-links {
+    /* 🚨 NAVIGATION LINKS AUTO HIDE FOR MOBILE */
+    .main-nav .nav-links {
         display: none !important; 
         flex-direction: column !important;
         position: absolute !important;
@@ -400,24 +405,24 @@ body {
         list-style: none !important;
     }
 
-    /* active class toggle view window */
-    .nav-links.active {
+    /* Jab javascript trigger kare tab active show ho */
+    .main-nav .nav-links.active {
         display: flex !important;
     }
 
-    .nav-links li {
+    .main-nav .nav-links li {
         width: 100% !important;
         text-align: center !important;
     }
 
-    .nav-links a {
+    .main-nav .nav-links a {
         margin: 0 !important;
         padding: 10px 0 !important;
         display: block !important;
         width: 100% !important;
     }
 
-    /* hamburger bar display setting */
+    /* 🚨 HAMBURGER ICON SHOW FOR MOBILE SCREEN */
     .menu-toggle {
         display: block !important;
         cursor: pointer !important;
