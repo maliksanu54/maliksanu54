@@ -1,5 +1,5 @@
 /* =======================================================
-   MALIKSANU54 OFFICIAL STYLE SHEET (PC & MOBILE 100% FIXED)
+   MALIKSANU54 OFFICIAL STYLE SHEET (ULTRA CACHE FIX)
    ======================================================= */
 
 html {
@@ -56,14 +56,13 @@ body {
   background-color: #ffffff;
 }
 
-/* --- Main Navbar Section (PC Fixes) --- */
+/* --- Main Navbar Section --- */
 .main-nav {
   background-color: #ffffff; 
-  padding: 10px 0 !important;
+  padding: 15px 0 !important;
   border-bottom: 1px solid #e2e8f0;
   position: relative;
   z-index: 999;
-  height: auto !important; /* Fixed height khatam ki taake logo piche na chupe */
 }
 
 .main-nav .nav-content {
@@ -75,22 +74,21 @@ body {
   margin: 0 auto;
 }
 
-/* 🚨 LOGO CONTAINER & IMAGE RE-FIX FOR PC */
 .main-nav .logo {
   display: flex !important;
   align-items: center !important;
   gap: 15px !important; 
-  height: auto !important;
 }
 
+/* PC Logo Size Restriction */
 .main-nav .logo img, 
 .main-nav .logo .logo-img {
-  height: 60px !important; /* PC par height ko restrict kar diya */
+  height: 55px !important; 
   width: auto !important;
   margin: 0 !important;
   padding: 0 !important;
   display: inline-block !important;
-  max-height: 60px !important;
+  max-height: 55px !important;
 }
 
 .logo-text {
@@ -148,12 +146,12 @@ body {
     margin-bottom: 40px;
 }
 
-/* 🚨 FORCE FIX FOR "GET FREE CONSULTATION" BUTTON */
-/* Yeh code button ko har haal mein golden color aur rounded shape dega */
+/* Button Formatting For All Possibilities */
 .hero-section button, 
 .hero-section input[type="submit"], 
 .hero-section a, 
-.hero-btn {
+.hero-btn,
+[class*="consultation"] {
     background-color: #e2b13c !important;
     color: #111e47 !important;
     padding: 12px 35px !important;
