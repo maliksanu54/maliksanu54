@@ -1,12 +1,11 @@
 /* =======================================================
-   MALIKSANU54 OFFICIAL STYLE SHEET (100% COMPLETE & FIXED)
+   MALIKSANU54 OFFICIAL STYLE SHEET (PC & MOBILE 100% FIXED)
    ======================================================= */
 
 html {
     scroll-behavior: smooth;
 }
 
-/* Poori Website ki Setting */
 body {
     background-color: #0f0f0f;
     color: #ffffff;
@@ -57,13 +56,14 @@ body {
   background-color: #ffffff;
 }
 
-/* --- Main Navbar Section --- */
+/* --- Main Navbar Section (PC Fixes) --- */
 .main-nav {
   background-color: #ffffff; 
-  padding: 5px 0;
+  padding: 10px 0 !important;
   border-bottom: 1px solid #e2e8f0;
   position: relative;
   z-index: 999;
+  height: auto !important; /* Fixed height khatam ki taake logo piche na chupe */
 }
 
 .main-nav .nav-content {
@@ -75,17 +75,22 @@ body {
   margin: 0 auto;
 }
 
+/* 🚨 LOGO CONTAINER & IMAGE RE-FIX FOR PC */
 .main-nav .logo {
-  display: flex;
-  align-items: center;
-  gap: 15px; 
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important; 
+  height: auto !important;
 }
 
+.main-nav .logo img, 
 .main-nav .logo .logo-img {
-  height: 140px; 
-  margin-bottom: -35px;
-  margin-top: -15px;
-  display: block;
+  height: 60px !important; /* PC par height ko restrict kar diya */
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  max-height: 60px !important;
 }
 
 .logo-text {
@@ -116,7 +121,6 @@ body {
   color: #e2b13c; 
 }
 
-/* Base toggle button desktop pr hide rahega */
 .menu-toggle {
     display: none;
 }
@@ -144,19 +148,32 @@ body {
     margin-bottom: 40px;
 }
 
+/* 🚨 FORCE FIX FOR "GET FREE CONSULTATION" BUTTON */
+/* Yeh code button ko har haal mein golden color aur rounded shape dega */
+.hero-section button, 
+.hero-section input[type="submit"], 
+.hero-section a, 
 .hero-btn {
-    background-color: #e2b13c;
-    color: #111e47;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+    background-color: #e2b13c !important;
+    color: #111e47 !important;
+    padding: 12px 35px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    border: none !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
 }
 
+.hero-section button:hover, 
+.hero-section input[type="submit"]:hover, 
+.hero-section a:hover, 
 .hero-btn:hover {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    color: #111e47 !important;
 }
 
 /* --- Sections Basic Layout --- */
@@ -330,7 +347,7 @@ body {
 }
 
 /* =======================================================
-   💥 MOBILE RESPONSIVE MEDIA QUERY (100% PERFECT FIT)
+   💥 MOBILE RESPONSIVE MEDIA QUERY
    ======================================================= */
 
 @media (max-width: 768px) {
@@ -349,20 +366,19 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* Logo structure mobile adjustment */
     .main-nav .logo {
         display: flex !important;
         align-items: center !important;
         gap: 8px !important;
         max-width: 70% !important;
-        overflow: visible !important;
     }
 
+    .main-nav .logo img,
     .main-nav .logo .logo-img {
-        height: 60px !important; 
+        height: 50px !important; 
+        max-height: 50px !important;
         width: auto !important;
-        margin-bottom: 0 !important; 
-        margin-top: 0 !important;
+        margin: 0 !important;
         display: block !important;
     }
 
@@ -372,7 +388,6 @@ body {
         white-space: nowrap !important; 
     }
 
-    /* Top Bar Settings for Mobile */
     .top-bar-content {
         flex-direction: column !important;
         gap: 8px !important;
@@ -388,7 +403,6 @@ body {
         display: none !important;
     }
 
-    /* 🚨 NAVIGATION LINKS AUTO HIDE FOR MOBILE */
     .main-nav .nav-links {
         display: none !important; 
         flex-direction: column !important;
@@ -405,7 +419,6 @@ body {
         list-style: none !important;
     }
 
-    /* Jab javascript trigger kare tab active show ho */
     .main-nav .nav-links.active {
         display: flex !important;
     }
@@ -422,7 +435,6 @@ body {
         width: 100% !important;
     }
 
-    /* 🚨 HAMBURGER ICON SHOW FOR MOBILE SCREEN */
     .menu-toggle {
         display: block !important;
         cursor: pointer !important;
@@ -441,7 +453,6 @@ body {
         border-radius: 2px;
     }
 
-    /* Sections responsiveness fixes */
     .hero-section {
         height: auto !important;
         padding: 80px 20px 60px 20px !important;
