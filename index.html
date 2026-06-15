@@ -198,6 +198,23 @@
     <div class="footer-line"></div>
     <p>&copy; 2026 MALIKSANU 54. All Rights Reserved. Designed for Dubai Business Solutions.</p>
 </footer>
+<script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navList = document.getElementById('nav-list');
 
+  // Hamburger button par click karne se menu open/close hoga
+  if(mobileMenu) {
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  }
+
+  // Jab kisi link par click ho toh menu khud band ho jaye
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      if(navList) navList.classList.remove('active');
+    });
+  });
+</script>
 </body>
 </html>
