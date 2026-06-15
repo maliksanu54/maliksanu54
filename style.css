@@ -1,5 +1,5 @@
 /* =======================================================
-   MALIKSANU54 OFFICIAL STYLE SHEET (100% CORRECTED)
+   MALIKSANU54 OFFICIAL STYLE SHEET (COMPLETE & FIXED)
    ======================================================= */
 
 html {
@@ -14,22 +14,6 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-/* Navbar Styling */
-.navbar {
-    background-color: #ffffff;
-    padding: 10px 40px; 
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    position: fixed; 
-    top: 0;          
-    left: 0;
-    width: 100%;     
-    z-index: 9999;   
-    box-sizing: border-box; 
 }
 
 /* --- Top Bar Setup --- */
@@ -136,9 +120,214 @@ body {
     display: none;
 }
 
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('Gemini_Generated_Image_ejohlzejohlzejoh.jpg.png') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    background-color: #e2b13c;
+    color: #111e47;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #ffffff;
+}
+
+/* --- Services Section --- */
+.services-section, .why-choose-us, .contact-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section h2, .why-choose-us h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #e2b13c;
+    margin: 0 auto 40px auto;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    border-radius: 8px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #e2b13c;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #a3a3a3;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- Why Choose Us Section --- */
+.choose-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.choose-card {
+    background-color: #111e47;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.choose-card h3 {
+    font-size: 24px;
+    color: #e2b13c;
+    margin-bottom: 10px;
+}
+
+.choose-card p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* --- Contact Section --- */
+.contact-container {
+    display: flex;
+    gap: 5px;
+    text-align: left;
+}
+
+.contact-info-left {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cta-text {
+    color: #a3a3a3;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.whatsapp-chat-btn {
+    display: inline-block;
+    background-color: #25d366;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.contact-form-right {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact-form-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form-right input, .contact-form-right textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f8fafc;
+}
+
+.send-message-btn {
+    background-color: #111e47;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* --- Footer Section --- */
+.footer {
+    padding: 30px 20px;
+    background-color: #0f0f0f;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #737373;
+    font-size: 14px;
+}
 
 /* =======================================================
-   💥 MOBILE RESPONSIVE MEDIA QUERY (100% WORKING FIXED)
+   💥 MOBILE RESPONSIVE MEDIA QUERY (100% FIXED)
    ======================================================= */
 
 @media (max-width: 768px) {
@@ -157,7 +346,6 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* Logo structure reset for mobile view */
     .main-nav .logo {
         display: flex !important;
         align-items: center !important;
@@ -180,7 +368,6 @@ body {
         white-space: nowrap !important; 
     }
 
-    /* Top Bar Settings for Mobile */
     .top-bar-content {
         flex-direction: column !important;
         gap: 8px !important;
@@ -196,7 +383,7 @@ body {
         display: none !important;
     }
 
-    /* links auto hide setting (Correct spelling important) */
+    /* links auto hide setting */
     .nav-links {
         display: none !important; 
         flex-direction: column !important;
@@ -213,7 +400,7 @@ body {
         list-style: none !important;
     }
 
-    /* Active class dynamic view toggle window */
+    /* active class toggle view window */
     .nav-links.active {
         display: flex !important;
     }
@@ -230,7 +417,7 @@ body {
         width: 100% !important;
     }
 
-    /* hamburger bar structure mobile view */
+    /* hamburger bar display setting */
     .menu-toggle {
         display: block !important;
         cursor: pointer !important;
@@ -247,5 +434,31 @@ body {
         display: block !important;
         transition: 0.3s;
         border-radius: 2px;
+    }
+
+    /* Sections responsiveness fixes */
+    .hero-section {
+        height: auto !important;
+        padding: 80px 20px 60px 20px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 26px !important;
+    }
+
+    .hero-section p {
+        font-size: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .contact-container {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .contact-form-right {
+        width: 100% !important;
+        padding: 25px 20px !important;
+        box-sizing: border-box !important;
     }
 }
