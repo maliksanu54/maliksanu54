@@ -1,5 +1,5 @@
 /* =======================================================
-   MALIKSANU54 OFFICIAL STYLE SHEET (SERVICES & QUICK PAGES FIXED)
+   MALIKSANU54 OFFICIAL STYLE SHEET (ULTRA HYBRID FIX)
    ======================================================= */
 
 html {
@@ -191,60 +191,57 @@ body {
     margin: 0 auto 40px auto;
 }
 
-/* 🚨 OUR SERVICES SECTION: Background wapas White kar diya */
-.services-section {
+/* 🚨 OUR SERVICES SECTION: ULTRA FORCE WHITE BACKGROUND */
+/* Yeh code har us section ko target karega jiske naam mein "service" aata hai */
+section[id*="service"], 
+section[class*="service"], 
+.services-section, 
+#services {
     background-color: #ffffff !important;
-    color: #111e47 !important; /* Heading text dark blue/black character mein */
-    padding: 60px 20px;
-    width: 100%;
-    box-sizing: border-box;
+    color: #111e47 !important;
+    padding: 60px 20px !important;
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box !important;
 }
 
-.services-section h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+section[id*="service"] h2, 
+section[class*="service"] h2, 
+.services-section h2, 
+#services h2 {
+    font-size: 36px !important;
+    margin-bottom: 10px !important;
     color: #111e47 !important;
 }
 
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+.services-container, [class*="services-container"] {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 30px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
 }
 
-/* Services Cards: Taake white background par uth kar dikhein */
-.service-card {
-    background-color: #111e47 !important; /* Premium dark blue cards */
+/* Services Cards */
+.service-card, [class*="service-card"], [class*="card"] {
+    background-color: #111e47 !important; 
     color: #ffffff !important;
-    padding: 40px 20px;
-    border-radius: 8px;
-    border: 1px solid #1e293b;
-    transition: 0.3s;
+    padding: 40px 20px !important;
+    border-radius: 8px !important;
+    border: 1px solid #1e293b !important;
+    transition: 0.3s !important;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: #e2b13c;
-    background-color: #0f172a !important;
+.service-card h3, [class*="service-card"] h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+    color: #e2b13c !important;
 }
 
-.service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #e2b13c !important; /* Headings golden */
-}
-
-.service-card p {
+.service-card p, [class*="service-card"] p {
     color: #cbd5e1 !important;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
 }
 
 /* --- Why Choose Us Section --- */
@@ -344,34 +341,36 @@ body {
     font-size: 16px;
 }
 
-/* 🚨 QUICK PAGES & FOOTER LINKS FIX */
-/* Is se blue color khatam ho jayega aur saaf dikhega */
-.footer, [class*="footer"], [class*="quick-pages"] {
-    padding: 40px 20px;
-    background-color: #0f0f0f;
+/* 🚨 QUICK PAGES & FOOTER LINKS FORCE FIX */
+footer, .footer, [class*="footer"], [class*="quick-pages"], [class*="links"] {
+    padding: 40px 20px !important;
+    background-color: #0f0f0f !important;
 }
 
-.footer h3, [class*="quick-pages"] h3, [class*="quick-pages"] h2 {
+footer h3, .footer h3, [class*="quick-pages"] h2, [class*="quick-pages"] h3 {
     color: #ffffff !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
-/* Footer & Quick Pages ke links ko sahi rang diya */
+/* Force override on all anchor links inside footer/quick-pages */
+footer a, 
 .footer a, 
 [class*="footer"] a, 
-[class*="quick-pages"] a {
+[class*="quick-pages"] a,
+[class*="links"] a {
     color: #ffffff !important; 
     text-decoration: none !important;
-    font-weight: 600;
-    margin: 0 10px;
-    transition: 0.3s;
-    display: inline-block;
+    font-weight: 600 !important;
+    margin: 0 10px !important;
+    transition: 0.3s !important;
+    display: inline-block !important;
 }
 
+footer a:hover, 
 .footer a:hover, 
 [class*="footer"] a:hover, 
 [class*="quick-pages"] a:hover {
-    color: #e2b13c !important; /* Hover karne par golden ho jayenge */
+    color: #e2b13c !important;
 }
 
 .footer-line {
