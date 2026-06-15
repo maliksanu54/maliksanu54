@@ -276,16 +276,17 @@ body {
 }
 
 /* 🚨 QUICK PAGES SECTION FIXED */
+/* 🚨 QUICK PAGES SECTION FIXED: NOW WHITE BACKGROUND */
 .quick-pages {
     padding: 60px 20px !important;
-    background-color: #0f0f0f !important;
+    background-color: #ffffff !important; /* Isko white kar diya */
     width: 100%;
     box-sizing: border-box;
 }
 
 .quick-pages h2 {
     font-size: 36px !important;
-    color: #ffffff !important;
+    color: #111e47 !important; /* Heading text ko dark blue kar diya taake white par dikhe */
     margin-bottom: 30px !important;
     font-weight: bold;
 }
@@ -298,7 +299,7 @@ body {
 }
 
 .quick-links a {
-    color: #ffffff !important; 
+    color: #111e47 !important; /* Links ko bhi dark blue kiya */
     text-decoration: none !important;
     font-weight: 600 !important;
     font-size: 16px;
@@ -306,7 +307,7 @@ body {
 }
 
 .quick-links a:hover {
-    color: #e2b13c !important;
+    color: #e2b13c !important; /* Hover karne par golden hi rahega */
 }
 
 /* --- Contact Section --- */
